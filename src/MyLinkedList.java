@@ -1,18 +1,20 @@
-class Node<T>{
-    T item;
-    Node<T> next;
-    public Node(T e){
-        item = e;
-    }
 
-    boolean hasNext() {
-        return next != null;
-    }
-}
 public class MyLinkedList<T> {
     private Node<T> head;
     private Node<T> tail;
     private int ind = -1;
+
+    class Node<T>{
+        T item;
+        Node<T> next;
+        public Node(T e){
+            item = e;
+        }
+
+        boolean hasNext() {
+            return next != null;
+        }
+    }
 
 
     public void add(T i) {
